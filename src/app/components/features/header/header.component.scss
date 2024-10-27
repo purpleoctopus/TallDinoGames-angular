@@ -1,0 +1,17 @@
+
+a, button{
+    font-size: 14px;
+}
+a{
+    font-weight: lighter;
+}
+button{
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: orangered;
+}
+
+#pointer{
+    transition: margin 1s cubic-bezier(0.075, 0.5, 0.165, 1),
+    width 0.4s cubic-bezier(0, 0, 0.165, 1);
+}
