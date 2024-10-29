@@ -19,6 +19,9 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
+    let filler = document.getElementById('header-filler')
+    filler!.style.height = window.getComputedStyle(document.getElementsByTagName('header')[0] as HTMLElement).height
+
     let nav = document.getElementsByTagName('a')
     for(let i = 0; i<nav.length;i++){
       let prev = 0

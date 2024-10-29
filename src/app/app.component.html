@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{title}}</title>
 </head>
-<body>
+<body class="overflow-hidden">
   <app-header/>
-  <router-outlet/>
+  <div class="p-5 px-16">
+    <router-outlet/>
+  </div>
 </body>
 </html>
