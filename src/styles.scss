@@ -3,12 +3,15 @@
 @tailwind utilities;
 
 body{
-    background-color: black;
     color: white;
     font-family: 'Helvetica';
     font-weight: bold;
+    background: linear-gradient(180.96deg, #000000 50vh, #351c00 129.1%);
 }
 
 h2{
     font-size: 18px;
+}
+html{
+    font-size: 16spx;
 }

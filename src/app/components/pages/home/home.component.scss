@@ -1,5 +1,5 @@
 h1{
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 article{
@@ -11,6 +11,9 @@ a, button{
 }
 a{
     font-weight: lighter;
+}
+.multiplatform-heading{
+    font-family: 'Poppins';
 }
 .gray-button{
     background-color: rgba(78, 78, 78, 0.25);
