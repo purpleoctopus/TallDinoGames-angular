@@ -1,12 +1,12 @@
-<header class="flex bg-black justify-between p-5 px-8 fixed z-10 w-[100vw]">
-    <h2>LOGO</h2>
-    <div class="flex justify-end gap-10 w-[50%] min-w-[540px]">
-        <div class="flex flex-col justify-between">
+<header class="flex h-[80px] bg-black justify-between p-5 px-8 fixed z-50 w-screen">
+    <h2 class="my-auto">LOGO</h2>
+    <div id="desktop_nav" class="flex my-auto justify-end gap-10 w-[50%] min-w-[540px]">
+        <div class="flex flex-col justify-center gap-3">
             <nav class="flex justify-between gap-10">
-                <a routerLink="/home">Головна</a>
-                <a routerLink="/about">Про нас</a>
-                <a routerLink="/portfolio">Портфоліо</a>
-                <a routerLink="/news">Новини</a>
+                <a class="nav-button" routerLink="/home">Головна</a>
+                <a class="nav-button" routerLink="/about">Про нас</a>
+                <a class="nav-button" routerLink="/portfolio">Портфоліо</a>
+                <a class="nav-button" routerLink="/news">Новини</a>
             </nav>
             <div>
                 <div id="pointer" class="bg-orange-500 w-[10%] h-1"></div>
@@ -14,8 +14,13 @@
         </div>
         <button routerLink="">Зв'язатися з нами</button>
     </div>
+    <div (click)="openBurgerMenu()"
+        class="flex my-auto flex-col justify-between w-8 h-7" id="mobile_nav" 
+        onclick="this.classList.toggle('active')">
+        <div class="bg-white w-full h-[15%]"></div>
+        <div class="bg-white w-full h-[15%]"></div>
+        <div class="bg-white w-full h-[15%]"></div>
+    </div>
 </header>
 
-<div id="header-filler" class="w-[100vw]">
-
-</div>
+<app-burger-menu></app-burger-menu>

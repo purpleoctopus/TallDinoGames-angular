@@ -10,8 +10,34 @@ button{
     border-radius: 0.25rem;
     background-color: orangered;
 }
+#mobile_nav div{
+    transition: all 0.3s ease;
+}
+#mobile_nav.active div:nth-child(1) {
+    transform: translateY(0.75rem) rotate(45deg); 
+}
+  
+#mobile_nav.active div:nth-child(2) {
+    opacity: 0; 
+}
+#mobile_nav.active div:nth-child(3) {
+    transform: translateY(-0.75rem) rotate(-45deg);
+}
 
 #pointer{
     transition: margin 1s cubic-bezier(0.075, 0.5, 0.165, 1),
     width 0.4s cubic-bezier(0, 0, 0.165, 1);
+}
+
+#mobile_nav{
+    display: none;
+}
+
+@media (max-width: 650px) {
+    #desktop_nav{
+        display: none;
+    }
+    #mobile_nav{
+        display: flex;
+    }
 }

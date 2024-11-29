@@ -2,16 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    background-color: #000000;
+}
+
 body{
     color: white;
     font-family: 'Helvetica';
     font-weight: bold;
-    background: linear-gradient(180.96deg, #000000 50vh, #351c00 129.1%);
+    background: linear-gradient(180.96deg, #000000 0.82%, #3d2204 129.1%);
 }
-
 h2{
     font-size: 18px;
 }
 html{
-    font-size: 16spx;
+    font-size: 16px;
+}
+@media(max-width: 480px){
+    html{
+        font-size: 14px;
+    }
+}
+@media(max-width: 320px){
+    html{
+        font-size: 12px;
+    }
 }

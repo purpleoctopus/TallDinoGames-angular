@@ -1,0 +1,11 @@
+.burger-menu{
+    display: none;
+    transition: transform 0.5s ease;
+    transform: translateX(100vw);
+}
+
+@media (max-width: 650px){
+    .burger-menu{
+        display: block;
+    }
+}
