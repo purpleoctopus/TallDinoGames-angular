@@ -1,178 +1,182 @@
-<div class="p-5 px-16-adaptive">
-    <article class="flex justify-around">
-        <section class="min-w-[50%]">
-            <h3 class="text-orange-500 mbs-5">3D game Dev</h3>
-            <h1 class="my-5 text-interval-mid">Робота, яку ми виконуємо для наших клієнтів</h1>
-            <p class="my-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Laudantium aliquid ut soluta blanditiis rem repellat voluptate, 
-                consectetur amet repudiandae incidunt iste temporibus neque consequuntur facere quibusdam assumenda modi optio sint?</p>
-            <button class="block bg-orange-500 rounded-full py-2 px-3 my-5">
-                Детальніше
-            </button>
-        </section>
-        <section class="min-w-[50%] overflow-visible">
-            <div class="relative w-[100vw] h-[100%]">
-                <img src="../../../../assets/images/joystick.png" class="w-[400px] h-auto relative top-0 left-[20%]">
-                <img src="../../../../assets/images/logos/unitylogo.png" class="w-[100px] h-auto absolute top-[20px] left-[15%]">
-                <img src="../../../../assets/images/logos/crylogo.png" class="w-[100px] h-auto absolute top-[80px] left-[10%]">
-                <img src="../../../../assets/images/logos/uelogo.png" class="w-[75px] h-auto absolute top-[200px] left-[4.5%]">
+<section class="p-5 px-16-adaptive flex justify-around">
+    <div class="min-w-[50%]">
+        <h3 class="text-orange-500 mbs-5">3D game Dev</h3>
+        <h1 class="my-5 text-interval-mid">{{"content.home.section1.h1" | translate}}</h1>
+        <p class="my-5">{{"content.home.section1.p1" | translate}}</p>
+        <button class="block bg-orange-500 rounded-full py-2 px-3 my-5">
+            {{"buttons.details" | translate}}
+        </button>
+    </div>
+    <div class="min-w-[50%] overflow-visible">
+        <div class="relative w-[100vw] h-[100%]">
+            <img src="./assets/images/joystick.webp" class="w-[400px] h-auto relative top-0 left-[20%]">
+            <img src="./assets/images/logos/unitylogo.png" class="w-[100px] h-auto absolute top-[20px] left-[15%]">
+            <img src="./assets/images/logos/crylogo.png" class="w-[100px] h-auto absolute top-[80px] left-[10%]">
+            <img src="./assets/images/logos/uelogo.png" class="w-[75px] h-auto absolute top-[200px] left-[4.5%]">
+        </div>
+    </div>
+</section>
+
+<section class="px-16-adaptive">
+    <div class="flex justify-between mb-3">
+        <h2>{{"content.home.section2.h1" | translate}}</h2>
+        <button class="gray-button">{{"buttons.all" | translate}}</button>
+    </div>
+    <div>
+        <app-swiper [config]="{slidesPerView:1, breakpoints: {
+            '720': {
+              slidesPerView: 3,
+            },
+            '540': {
+              slidesPerView: 2,
+            },
+            '360': {
+              slidesPerView: 1,
+            }
+          }}">
+            <div class="swiper-slide">
+                <img [responsiveImage]="{
+                    '480': './assets/images/pictures-med/games/stray.webp',
+                    '1200': './assets/images/pictures-large/games/stray.webp'
+                }" class="h-auto mx-auto w-[200px] mb-2">
+                <div class="flex justify-center">
+                    <img src="./assets/images/fire.png" class="inline h-[1.25rem] w-auto pr-2">
+                    <span class="text-sm">
+                        40 {{'content.home.section2.followers' | translate | plural:40}}
+                    </span>
+                </div>
             </div>
-        </section>
-    </article>
+            <div class="swiper-slide">
+                <img [responsiveImage]="{
+                    '480': './assets/images/pictures-med/games/stray.webp',
+                    '1200': './assets/images/pictures-large/games/stray.webp'
+                }" class="h-auto mx-auto w-[200px] mb-2">
+                <div class="flex justify-center">
+                    <img src="./assets/images/fire.png" class="inline h-[1.25rem] w-auto pr-2">
+                    <span class="text-sm">
+                        40 {{'content.home.section2.followers' | translate | plural:40}}
+                    </span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img [responsiveImage]="{
+                    '480': './assets/images/pictures-med/games/stray.webp',
+                    '1200': './assets/images/pictures-large/games/stray.webp'
+                }" class="h-auto mx-auto w-[200px] mb-2">
+                <div class="flex justify-center">
+                    <img src="./assets/images/fire.png" class="inline h-[1.25rem] w-auto pr-2">
+                    <span class="text-sm">
+                        40 {{'content.home.section2.followers' | translate | plural:40}}
+                    </span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img [responsiveImage]="{
+                    '480': './assets/images/pictures-med/games/stray.webp',
+                    '1200': './assets/images/pictures-large/games/stray.webp'
+                }" class="h-auto mx-auto w-[200px] mb-2">
+                <div class="flex justify-center">
+                    <img src="./assets/images/fire.png" class="inline h-[1.25rem] w-auto pr-2">
+                    <span class="text-sm">
+                        40 {{'content.home.section2.followers' | translate | plural:40}}
+                    </span>
+                </div>
+            </div>
+        </app-swiper>
+    </div>
+</section>
 
-    <article>
-        <section class="flex justify-between mb-3">
-            <h2>Зараз популярне</h2>
-            <button class="gray-button">Більше</button>
-        </section>
-        <section>
-            <app-swiper [config]="{slidesPerView:1, breakpoints: {
-                '720': {
-                  slidesPerView: 3,
-                },
-                '540': {
-                  slidesPerView: 2,
-                },
-                '360': {
-                  slidesPerView: 1,
-                }
-              }}">
-                <div class="swiper-slide">
-                    <img src="../../../../assets/images/pictures-large/stray.png" class="h-auto mx-auto w-[200px] mb-2">
-                    <div class="flex justify-center">
-                        <img src="../../../../assets/images/fire.png" class="inline h-[1.25rem] w-auto pr-1">
-                        <span class="text-sm">40 followers</span>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="../../../../assets/images/pictures-large/stray.png" class="h-auto mx-auto w-[200px] mb-2">
-                    <div class="flex justify-center">
-                        <img src="../../../../assets/images/fire.png" class="inline h-[1.25rem] w-auto pr-1">
-                        <span class="text-sm">40 followers</span>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="../../../../assets/images/pictures-large/stray.png" class="h-auto mx-auto w-[200px] mb-2">
-                    <div class="flex justify-center">
-                        <img src="../../../../assets/images/fire.png" class="inline h-[1.25rem] w-auto pr-1">
-                        <span class="text-sm">40 followers</span>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="../../../../assets/images/pictures-large/stray.png" class="h-auto mx-auto w-[200px] mb-2">
-                    <div class="flex justify-center">
-                        <img src="../../../../assets/images/fire.png" class="inline h-[1.25rem] w-auto pr-1">
-                        <span class="text-sm">40 followers</span>
-                    </div>
-                </div>
-            </app-swiper>
-        </section>
-    </article>
-</div>
+<section>
+    <h2 class="p-5 px-16-adaptive text-xl mx-auto text-center poppins mb-4">
+        {{'content.home.section3.h1' | translate}}
+    </h2>
+    <div class="p-5 px-16-adaptive">
+        <h2 class="poppins mb-4">{{'content.home.section3.h2' | translate}}</h2>
+        <p class="mb-4">{{'content.home.section3.p1' | translate}}</p>
+        <img class="my-5" src="./assets/images/pictures-large/spiderman.webp">
+    </div>
+</section>
 
-<article>
-    <h2 class="p-5 px-16-adaptive text-xl mx-auto text-center poppins mb-4">Lorem ipsum is a simple dummy text of the printing and typesetting industry</h2>
-    <section class="p-5 px-16-adaptive">
-        <h2 class="poppins mb-4">Lorem ipsum</h2>
-        <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe consequatur et sapiente vitae nulla quibusdam suscipit, 
-            repellendus totam non officiis libero fuga! Blanditiis commodi voluptates in voluptate numquam tempore iste?</p>
-        <img class="my-5" src="../../../../assets/images/pictures-large/spiderman.webp">
-    </section>
-</article>
-
-<article class="flex flex-col relative p-5 z-10 min-h-[600px] h-auto bg-dune" [responsiveBackground]="{
-    '480': '../../../assets/images/pictures-sm/dune.webp',
-    '768': '../../../assets/images/pictures-med/dune.webp',
-    '1200': '../../../assets/images/pictures-large/dune.webp'
+<section class="flex flex-col relative p-5 z-10 min-h-[600px] h-auto bg-dune" [responsiveBackground]="{
+    '480': './assets/images/pictures-sm/dune.webp',
+    '768': './assets/images/pictures-med/dune.webp',
+    '1200': './assets/images/pictures-large/dune.webp'
     }">
-    <h2 class="text-center mx-auto relative z-1">Lorem ipsum is a simple dummy text of the printing and typesetting industry</h2>
-    <section class="text-center relative z-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, magni fuga. Dolores at consequatur voluptatum voluptatem 
-        suscipit quidem tempora, ducimus adipisci ipsum aliquid. Quis qui hic sapiente magni quod voluptas.</section>
-    <section class="w-full flex flex-wrap justify-center gap-3 relative z-1 btns-grid">
-        <div class="button">
-            <img src="../../../../assets/images/icons/smartphone.png" class="btn-white-rounded">
-            <p class="text-sm text-center poppins">Mobile Game Development</p>
-            <img src="../../../../assets/images/arrow.png" class="w-[1rem] h-auto mx-auto">
-        </div>
-        <div class="button">
-            <img src="../../../../assets/images/icons/pc.png" class="btn-white-rounded">
-            <p class="text-sm text-center poppins">PC Game Development</p>
-            <img src="../../../../assets/images/arrow.png" class="w-[1rem] h-auto mx-auto">
-        </div>
-        <div class="button">
-            <img src="../../../../assets/images/icons/ps4.png" class="btn-white-rounded">
-            <p class="text-sm text-center poppins">PS4 Game Development</p>
-            <img src="../../../../assets/images/arrow.png" class="w-[1rem] h-auto mx-auto">
-        </div>
-        <div class="button">
-            <img src="../../../../assets/images/icons/vr_glasses.png" class="btn-white-rounded">
-            <p class="text-sm text-center poppins">AR/VR Solutions</p>
-            <img src="../../../../assets/images/arrow.png" class="w-[1rem] h-auto mx-auto">
-        </div>
-        <div class="button">
-            <img src="../../../../assets/images/icons/desktop.png" class="btn-white-rounded">
-            <p class="text-sm text-center poppins">AR/VR Design</p>
-            <img src="../../../../assets/images/arrow.png" class="w-[1rem] h-auto mx-auto">
-        </div>
-        <div class="button">
-            <img src="../../../../assets/images/icons/3d-cube.png" class="btn-white-rounded">
-            <p class="text-sm text-center poppins">3D Modelings</p>
-            <img src="../../../../assets/images/arrow.png" class="w-[1rem] h-auto mx-auto">
-        </div>
-    </section>
-</article>
-
-<article>
-    <h2 class="text-center poppins text-xl mb-4">Our Recent Projects</h2>
-    <p class="text-sm text-center mb-4">Lorem ipsum is simple dummy text of the printing and typesetting
-        industry.
+    <h2 class="text-center mx-auto relative z-1">
+        {{'content.home.section4.h1' | translate}}
+    </h2>
+    <p class="text-center relative z-1">
+        {{'content.home.section4.p1' | translate}}
     </p>
-    <section id="project_examples-desktop" class="mb-4">
+    <div class="w-full flex flex-wrap justify-center gap-3 relative z-1 btns-grid">
+        <div class="button">
+            <img src="./assets/images/icons/smartphone.png" class="btn-white-rounded">
+            <p class="text-sm text-center poppins">Mobile Game Development</p>
+            <img src="./assets/images/arrow.png" class="w-[1rem] h-auto mx-auto">
+        </div>
+        <div class="button">
+            <img src="./assets/images/icons/pc.png" class="btn-white-rounded">
+            <p class="text-sm text-center poppins">PC Game Development</p>
+            <img src="./assets/images/arrow.png" class="w-[1rem] h-auto mx-auto">
+        </div>
+        <div class="button">
+            <img src="./assets/images/icons/ps4.png" class="btn-white-rounded">
+            <p class="text-sm text-center poppins">PS4 Game Development</p>
+            <img src="./assets/images/arrow.png" class="w-[1rem] h-auto mx-auto">
+        </div>
+        <div class="button">
+            <img src="./assets/images/icons/vr_glasses.png" class="btn-white-rounded">
+            <p class="text-sm text-center poppins">AR/VR Solutions</p>
+            <img src="./assets/images/arrow.png" class="w-[1rem] h-auto mx-auto">
+        </div>
+        <div class="button">
+            <img src="./assets/images/icons/desktop.png" class="btn-white-rounded">
+            <p class="text-sm text-center poppins">AR/VR Design</p>
+            <img src="./assets/images/arrow.png" class="w-[1rem] h-auto mx-auto">
+        </div>
+        <div class="button">
+            <img src="./assets/images/icons/3d-cube.png" class="btn-white-rounded">
+            <p class="text-sm text-center poppins">3D Modelings</p>
+            <img src="./assets/images/arrow.png" class="w-[1rem] h-auto mx-auto">
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="text-center poppins text-xl mb-4">{{'content.home.section5.h1' | translate}}</h2>
+    <p class="text-sm text-center mb-4">
+        {{'content.home.section5.p1' | translate}}
+    </p>
+    <div class="desktop-view mb-4">
         <div class="flex justify-around mb-3 h-[18vw]">
-            <img src="../../../../assets/images/pictures-med/our-recent-projects/project1.png">
-            <img src="../../../../assets/images/pictures-med/our-recent-projects/project2.png">
-            <img src="../../../../assets/images/pictures-med/our-recent-projects/project3.png">
+            <img [responsiveImage]="{
+                '720': './assets/images/pictures-med/our-recent-projects/project1.webp',
+                '1200': './assets/images/pictures-large/our-recent-projects/project1.webp'
+            }">
+            <img src="./assets/images/pictures-med/our-recent-projects/project2.png">
+            <img src="./assets/images/pictures-med/our-recent-projects/project3.png">
         </div>
         <div class="flex justify-around h-[18vw]">
-            <img class="w-auto" src="../../../../assets/images/pictures-large/our-recent-projects/project4.png">
-            <img src="../../../../assets/images/pictures-med/our-recent-projects/project5.png">
-            <img src="../../../../assets/images/pictures-med/our-recent-projects/project6.png">
+            <img class="w-auto" src="./assets/images/pictures-large/our-recent-projects/project4.png">
+            <img src="./assets/images/pictures-med/our-recent-projects/project5.png">
+            <img src="./assets/images/pictures-med/our-recent-projects/project6.png">
         </div>
-    </section>
-    <section id="project_examples-mobile">
+    </div>
+    <div class="mobile-view">
         <app-swiper [config]="{autoplay: {delay:5000}, loop: true}">
             @for (image of [
-            '../../../../assets/images/pictures-med/our-recent-projects/project1.png',
-            '../../../../assets/images/pictures-med/our-recent-projects/project2.png',
-            '../../../../assets/images/pictures-med/our-recent-projects/project3.png',
-            '../../../../assets/images/pictures-med/our-recent-projects/project4.png',
-            '../../../../assets/images/pictures-med/our-recent-projects/project5.png',
-            '../../../../assets/images/pictures-med/our-recent-projects/project6.png'
+            './assets/images/pictures-large/our-recent-projects/project1.webp',
+            './assets/images/pictures-med/our-recent-projects/project2.png',
+            './assets/images/pictures-med/our-recent-projects/project3.png',
+            './assets/images/pictures-med/our-recent-projects/project4.png',
+            './assets/images/pictures-med/our-recent-projects/project5.png',
+            './assets/images/pictures-med/our-recent-projects/project6.png'
             ]; track $index) {
                 <div class="swiper-slide">
-                    <img class="h-full max-h-[15rem] w-auto mx-auto" [src]="image" [alt]="image" />
+                    <img class="h-full max-h-[15rem] w-auto mx-auto" [src]="image" alt="project image" />
                 </div>
             }
         </app-swiper>
-    </section>
-    <button class="mx-auto gray-button block">Більше</button>
-</article>
-<article class="px-16-adaptive">
-    <h2>Lorem ipsum</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat rerum dolor, officiis 
-        voluptatem error, deserunt, eaque maxime sapiente odio corrupti vero natus cumque tempora
-         distinctio debitis ab ipsa ut cum?</p>
-</article>
-<article class="px-16-adaptive">
-    <div class="p-5 mx-auto flex flex-wrap justify-between transperent-gray rounded mt-4">
-        <div class="max-w-sm">
-            <h2 class="text-xl">Stay in the loop</h2>
-            <div class="break-words">Subscribe to receive the latest news and updates about TDA.
-                We promise not to spam you! </div>
-        </div>
-        <div class="bg-white p-2 rounded my-auto">
-            <input type="text" placeholder="Enter email address" class="w-[15rem]">
-            <button type="button" class="bg-orange-600 py-1 px-2 rounded">Continue</button>
-        </div>
     </div>
-</article>
+    <button class="mx-auto gray-button block">{{'buttons.all' | translate}}</button>
+</section>

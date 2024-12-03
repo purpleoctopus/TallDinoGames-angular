@@ -1,11 +1,9 @@
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
 
 html{
     background-color: #000000;
 }
-
 body{
     color: white;
     font-family: 'Helvetica';
@@ -18,12 +16,12 @@ h2{
 html{
     font-size: 16px;
 }
-@media(max-width: 480px){
+@media(max-width: 600px){
     html{
         font-size: 14px;
     }
 }
-@media(max-width: 320px){
+@media(max-width: 360px){
     html{
         font-size: 12px;
     }

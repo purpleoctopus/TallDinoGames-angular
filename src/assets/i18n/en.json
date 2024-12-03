@@ -1,0 +1,57 @@
+{
+    "content": {
+        "home": {
+            "section1": {
+                "h1": "Work that we produce for our clients",
+                "p1": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium aliquid ut soluta blanditiis rem repellat voluptate, consectetur amet repudiandae incidunt iste temporibus neque consequuntur facere quibusdam assumenda modi optio sint?" 
+            },
+            "section2": {
+                "h1": "Currently trending games",
+                "followers": ["subscriber", "subscribers"]
+            },
+            "section3": {
+                "h1": "Lorem ipsum is a simple dummy text of the printing and typesetting industry",
+                "h2": "Lorem ipsum",
+                "p1": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe consequatur et sapiente vitae nulla quibusdam suscipit, repellendus totam non officiis libero fuga! Blanditiis commodi voluptates in voluptate numquam tempore iste?"
+            },
+            "section4": {
+                "h1": "Lorem ipsum is a simple dummy text of the printing and typesetting industry",
+                "p1": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, magni fuga. Dolores at consequatur voluptatum voluptatem suscipit quidem tempora, ducimus adipisci ipsum aliquid. Quis qui hic sapiente magni quod voluptas."
+            },
+            "section5": {
+                "h1": "Our Recent Projects",
+                "p1": "Lorem ipsum is simple dummy text of the printing and typesetting industry."
+            }
+        },
+        "footer": {
+            "section1": {
+                "h1": "Lorem ipsum",
+                "p1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat rerum dolor, officiis voluptatem error, deserunt, eaque maxime sapiente odio corrupti vero natus cumque tempora distinctio debitis ab ipsa ut cum?" 
+            },
+            "section2": {
+                "h1": "Stay in the loop",
+                "p1": "Subscribe to receive the latest news and updates about TDA. We promise not to spam you!",
+                "input-placeholder": "Enter email address"
+            },
+            "section3": {
+                "p1": "Lorem ipsum is a simple dumy text",
+                "about": {
+                    "h1": "About us",
+                    "p1": "Zeux",
+                    "p2": "Portfolio",
+                    "p3": "Careers",
+                    "p4": "Contact us"
+                },
+                "contact": {
+                    "h1": "Contact us",
+                    "p1": "Lorem ipsum is a simple dumy text"
+                }
+            }
+        }
+    },
+    "buttons":{
+        "details": "Get more details",
+        "all": "See all",
+        "continue": "Continue"
+    }
+}

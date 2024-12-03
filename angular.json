@@ -17,7 +17,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/tall-dino-games-angular",
+            "outputPath": {
+            "base": "dist/tall-dino-games-angular",
+            "browser": ""
+            },
+            "deployUrl": "https://purpleoctopus.github.io/TallDinoGames-angular/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [

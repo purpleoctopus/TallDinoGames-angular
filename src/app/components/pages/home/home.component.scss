@@ -7,8 +7,16 @@ h2{
 h3{
     @apply text-lg;
 }
-article{
+section{
     @apply mb-10;
+}
+
+.px-16-adaptive{
+    @apply px-[clamp(1rem,5%,4rem)];
+}
+
+.transperent-gray{
+    background-color: rgba(46, 46, 46, 0.7);
 }
 
 a, button{
@@ -19,9 +27,6 @@ a{
 }
 .poppins{
     font-family: 'Poppins';
-}
-.transperent-gray{
-    background-color: rgba(46, 46, 46, 0.7);
 }
 .gray-button{
     @apply transperent-gray;
@@ -65,20 +70,19 @@ a{
 input[type="text"]:focus{
     outline: none;
 }
-.px-16-adaptive{
-    @apply px-[clamp(1rem,5%,4rem)];
-}
 input[type="text"]{
     color: black;
 }
-#project_examples-mobile{
+
+.mobile-view{
     display: none;
 }
-@media (max-width: 650px) {
-    #project_examples-mobile{
+
+@media (max-width: 560px) {
+    .mobile-view{
         display: block;
     }
-    #project_examples-desktop{
+    .desktop-view{
         display: none;
     }
 }

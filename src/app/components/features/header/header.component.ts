@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { NavigationStart, Router, RouterModule } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { BurgerMenuComponent } from '../burger-menu/burger-menu.component';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -18,8 +19,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   private positions: string[] = []
   private width: string[] = []
 
-  constructor(private router: Router) {
-  }
+  constructor(private router: Router, private translate: TranslateService) {}
 
   ngOnInit(): void {
     let main = document.getElementsByTagName('main')[0]
