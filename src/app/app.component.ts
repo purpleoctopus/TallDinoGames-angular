@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./components/features/header/header.component";
 import { FooterComponent } from "./components/features/footer/footer.component";
@@ -12,7 +12,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'TallDinoGames-angular';
+  title = 'Home - TallDinoGames';
   constructor(private translate: TranslateService) {
     this.translate.addLangs(['uk', 'en']);
     this.translate.setDefaultLang('uk');
