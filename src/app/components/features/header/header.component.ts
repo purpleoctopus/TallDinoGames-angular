@@ -1,8 +1,9 @@
-import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, inject, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { NavigationStart, Router, RouterModule } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { BurgerMenuComponent } from '../burger-menu/burger-menu.component';
 import { TranslateService } from '@ngx-translate/core';
+import { CookieService } from '../../../services/cookie/cookie.service';
 
 @Component({
   selector: 'app-header',
@@ -19,7 +20,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   private positions: string[] = []
   private width: string[] = []
 
-  constructor(private router: Router, private translate: TranslateService) {}
+  constructor(private router: Router, private translate: TranslateService, private cookies: CookieService) {}
 
   ngOnInit(): void {
     let main = document.getElementsByTagName('main')[0]
@@ -60,6 +61,24 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   openBurgerMenu(){
     this.burgermenu.toggle()
+  }
+
+  openLangDropdown(){
+    const dropdown = document.getElementById('dropdown')
+    dropdown!.classList.toggle('open');
+  }
+
+  public setLang(lang: string): void{
+    this.cookies.lang = lang
+    const currentUrl = this.router.url;
+
+    const urlSegments = currentUrl.split('/');
+    const lastSegment = urlSegments[urlSegments.length - 1] || 'home';
+    this.openLangDropdown()
+    this.router.navigate([lastSegment])
+  }
+  public get currentLang():string{
+    return this.translate.currentLang
   }
 
   navSetup(){

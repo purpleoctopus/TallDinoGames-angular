@@ -7,7 +7,7 @@
             },
             "section2": {
                 "h1": "Currently trending games",
-                "followers": ["subscriber", "subscribers"]
+                "followers": ["subscriber", "subscribers", "subscribers"]
             },
             "section3": {
                 "h1": "Lorem ipsum is a simple dummy text of the printing and typesetting industry",
