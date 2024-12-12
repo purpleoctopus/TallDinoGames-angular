@@ -3,48 +3,48 @@
         "home": {
             "section1": {
                 "h1": "Робота, яку ми виконуємо для наших клієнтів",
-                "p1": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium aliquid ut soluta blanditiis rem repellat voluptate, consectetur amet repudiandae incidunt iste temporibus neque consequuntur facere quibusdam assumenda modi optio sint?" 
+                "p1": "Ми спеціалізуємося на створенні високоякісних програмних рішень, включаючи розробку ігор для різних платформ на Unity, Unreal Engine 4 та CryEngine. Наша експертиза охоплює проєктування захопливих віртуальних середовищ та створення інноваційних користувацьких інтерфейсів. Окрім того, ми розробляємо індивідуальні застосунки, які відповідають специфічним потребам бізнесу, забезпечуючи високу продуктивність і масштабованість. Чи то мобільна гра, VR-симуляція, чи корпоративний застосунок, ми завжди ставимо на перше місце інновації, надійність та задоволення клієнтів у кожному нашому проєкті." 
             },
             "section2": {
                 "h1": "Зараз популярне",
                 "followers": ["підписник", "підписники", "підписників"]
             },
             "section3": {
-                "h1": "Lorem ipsum is a simple dummy text of the printing and typesetting industry",
-                "h2": "Lorem ipsum",
-                "p1": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe consequatur et sapiente vitae nulla quibusdam suscipit, repellendus totam non officiis libero fuga! Blanditiis commodi voluptates in voluptate numquam tempore iste?"
+                "h1": "Розробка ігор - це наша стихія.",
+                "h2": "Наш курс",
+                "p1": "Кожен наш працівник - це ентузіаст, який справді любить свою роботу. Сумління не дозволить нашим дизайнерам і геймдевелоперам випустити продукт, який би вони самі не могли рекомендувати до використання. Завдяки цьому, якість наших продуктів на вищому рівні, і 99% нашів клієнтів та користувачі задоволені нею!"
             },
             "section4": {
-                "h1": "Lorem ipsum is a simple dummy text of the printing and typesetting industry",
-                "p1": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, magni fuga. Dolores at consequatur voluptatum voluptatem suscipit quidem tempora, ducimus adipisci ipsum aliquid. Quis qui hic sapiente magni quod voluptas."
+                "h1": "Напрямки, по яким ми працюємо",
+                "p1": "Наша компанія охоплює всі сучасні напрямки розробки ігор та симуляторів, включаючи розробку під будь-які платформи! Основні напрямки, по яким у нас уже був досвід:"
             },
             "section5": {
-                "h1": "Our Recent Projects",
-                "p1": "Lorem ipsum is simple dummy text of the printing and typesetting industry."
+                "h1": "Наші попередні проекти",
+                "p1": "Трохи наших проектів, якими ми дуже пишаємось :)"
             }
         },
         "footer": {
             "section1": {
-                "h1": "Lorem ipsum",
-                "p1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat rerum dolor, officiis voluptatem error, deserunt, eaque maxime sapiente odio corrupti vero natus cumque tempora distinctio debitis ab ipsa ut cum?" 
+                "h1": "Ми прогресуємо",
+                "p1": "Наша компанія постійно працює над новими проектами, вдосконалює старі. Також ми часто проводимо фанатські зустрічі. Не гайте час, підписуйтеся на наші сторінки у соц. мережах або на оновлення, щоб завжди бути в курсі всіх подій!" 
             },
             "section2": {
-                "h1": "Stay in the loop",
-                "p1": "Subscribe to receive the latest news and updates about TDA. We promise not to spam you!",
+                "h1": "Будьте в курсі подій",
+                "p1": "Підпишіться, щоб отримувати всі новини і сповіщення про події на пошту. Обіцяємо не спамити!",
                 "input-placeholder": "Введіть e-mail адресу"
             },
             "section3": {
-                "p1": "Lorem ipsum is a simple dumy text",
+                "p1": "TallDinoGames - компанія, що робить ігри для душі.",
                 "about": {
-                    "h1": "About us",
+                    "h1": "Про нас",
                     "p1": "Zeux",
-                    "p2": "Portfolio",
-                    "p3": "Careers",
-                    "p4": "Contact us"
+                    "p2": "Портфоліо",
+                    "p3": "Кар'єра",
+                    "p4": "Зв'язатися з нами"
                 },
                 "contact": {
-                    "h1": "Contact us",
-                    "p1": "Lorem ipsum is a simple dumy text"
+                    "h1": "Зв'язатися з нами",
+                    "p1": "Зв'яжіться з нашими любезними менеджерами, які за необхідності передадуть ваш запит у технічний відділ"
                 }
             }
         }
