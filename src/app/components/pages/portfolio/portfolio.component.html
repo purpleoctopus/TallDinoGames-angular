@@ -1,1 +1,114 @@
-<p>portfolio works!</p>
+<section class="advantages px-16-adaptive pt-5">
+    <h4 class="text-center mb-2">Home > <span class="text-orange-500">Portfolio</span></h4>
+    <h2 class="text-center mb-2">{{'content.portfolio.section1.h1' | translate}}</h2>
+    <p class="text-xs text-center mb-2">{{'content.portfolio.section1.p1' | translate}}</p>
+    <div class="transperent-gray justify-between flex p-[clamp(1rem,5%,4rem)]">
+        <div class="flex gap-2">
+            <div class="rounded-full h-[90%] p-[clamp(1rem,5%,4rem)] aspect-square bg-white">
+                <img src="./assets/images/icons/user.svg" alt="users count">
+            </div>
+            <div class="my-auto">
+                <h3>90+</h3>
+                <div class="responsive-text text-sm">{{'content.portfolio.section1.clients' | translate | plural:90}}</div>
+            </div>
+        </div>
+        <div class="flex gap-2">
+            <div class="flex h-[90%] justify-center rounded-full p-[clamp(1rem,5%,4rem)] aspect-square bg-white">
+                <img src="./assets/images/icons/point.svg" alt="countries count">
+            </div>
+            <div class="my-auto">
+                <h3>30+</h3>
+                <div class="responsive-text text-sm">{{'content.portfolio.section1.countries' | translate | plural:30}}</div>
+            </div>
+        </div>
+        <div class="flex gap-2">
+            <div class="rounded-full h-[90%] p-[clamp(1rem,5%,4rem)] aspect-square bg-white">
+                <img src="./assets/images/icons/server.svg" alt="projects count">
+            </div>
+            <div class="my-auto">
+                <h3>50+</h3>
+                <div class="responsive-text text-sm">{{'content.portfolio.section1.projects' | translate | plural:50}}</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="px-16-adaptive flex flex-wrap gap-4 justify-between">
+    <div class="mx-auto flex flex-col justify-center w-[60%] min-w-[240px]">
+        <img src="./assets/images/pictures-large/spiderman.webp" alt="spiderman-project">
+    </div>
+    <div class="flex flex-wrap gap-3 flex-grow w-[30%] min-w-[240px]">
+        <div class="w-[calc(50%-0.75rem)] mx-auto min-w-[240px]">
+            <h2 class="mb-2">{{'content.portfolio.section2.h1' | translate}}</h2>
+            <p class="mb-2">{{'content.portfolio.section2.p1' | translate}}</p>
+        </div>
+        <ul class="w-[calc(50%-0.75rem)] mx-auto min-w-[240px]">
+            <li class="mb-2"><img src="./assets/images/icons/check-mark.svg" alt="check-mark" class="inline mr-2">{{'content.portfolio.section2.ul.li1' | translate}}</li>
+            <li class="mb-2"><img src="./assets/images/icons/check-mark.svg" alt="check-mark" class="inline mr-2">{{'content.portfolio.section2.ul.li2' | translate}}</li>
+            <li class="mb-2"><img src="./assets/images/icons/check-mark.svg" alt="check-mark" class="inline mr-2">{{'content.portfolio.section2.ul.li3' | translate}}</li>
+            <li class="mb-2"><img src="./assets/images/icons/check-mark.svg" alt="check-mark" class="inline mr-2">{{'content.portfolio.section2.ul.li4' | translate}}</li>
+        </ul>
+    </div>
+</section>
+
+<section class="px-16-adaptive flex flex-wrap gap-4 justify-between">
+    <div class="mx-auto order-adaptive w-[30%] min-w-[240px]">
+        <img src="./assets/images/pictures-large/games/stray.webp" alt="stray-project">
+    </div>
+    <div class="mx-auto w-[60%] flex flex-col justify-between min-w-[240px]">
+        <h2 class="mb-2">{{'content.portfolio.section3.h1' | translate}}</h2>
+        <p class="mb-2">{{'content.portfolio.section3.p1' | translate}}</p>
+        <p class="mb-2">{{'content.portfolio.section3.p2' | translate}}</p>
+        <button class="w-fit bg-orange-500 py-2 px-3 my-5">{{'buttons.read_more' | translate}}</button>
+    </div>
+</section>
+
+<section class="px-16-adaptive flex flex-wrap gap-4 justify-between">
+    <div class="mx-auto w-[30%] min-w-[240px]">
+        <img src="./assets/images/pictures-large/games/game2.webp" alt="stray-project">
+    </div>
+    <div class="mx-auto w-[60%] flex flex-col justify-between min-w-[240px]">
+        <h2>{{'content.portfolio.section4.h1' | translate}}</h2>
+        <p>{{'content.portfolio.section4.p1' | translate}}</p>
+        <button class="w-fit bg-orange-500 py-2 px-3 my-5">Read More</button>
+    </div>
+</section>
+
+
+<section class="px-16-adaptive flex flex-wrap gap-4 justify-between">
+    <div class="mx-auto order-adaptive w-[30%] min-w-[240px]">
+        <img src="./assets/images/pictures-large/games/game3.webp" alt="stray-project">
+    </div>
+    <div class="mx-auto w-[60%] flex flex-col justify-between min-w-[240px]">
+        <h2>{{'content.portfolio.section5.h1' | translate}}</h2>
+        <p>{{'content.portfolio.section5.p1' | translate}}</p>
+        <button class="w-fit bg-orange-500 py-2 px-3 my-5">Read More</button>
+    </div>
+</section>
+
+<section class="transperent-gray px-16-adaptive py-8">
+    <h2 class="text-center mb-2">{{'content.portfolio.section6.h1' | translate}}</h2>
+    <p class="text-center">{{'content.portfolio.section6.p1' | translate}}</p>
+    <app-swiper [config]="swiperConfig" [extended]="true">
+        @for (review of reviews; track $index) {
+        <div class="swiper-slide">
+            <div class="card"> 
+                <div class="h-1/3 flex justify-between">
+                    <div class="flex gap-2">
+                        <img [alt]="review.name" [src]="review.image" class="h-full rounded-full aspect-square">
+                        <div class="my-auto">
+                            <h4>{{review.name}}</h4>
+                            <h4 class="opacity-50 text-xs">{{review.location}}</h4>
+                        </div>
+                    </div>
+                    <div class="my-auto">
+                        <h3 class="inline mr-1">{{review.rating}}</h3>
+                        <img alt="star icon" src="./assets/images/icons/star.svg" class="w-4 inline">
+                    </div>
+                </div>
+                <p class="mt-2 text-sm">{{review.text}}</p>
+            </div>
+        </div>
+        }
+    </app-swiper>
+</section>

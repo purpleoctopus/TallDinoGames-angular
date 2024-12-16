@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-burger-menu',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, TranslatePipe],
   templateUrl: './burger-menu.component.html',
   styleUrl: './burger-menu.component.scss'
 })

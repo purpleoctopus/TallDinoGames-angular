@@ -1,40 +1,47 @@
 {
     "content": {
+        "header": {
+            "home" : "Home",
+            "about": "About us",
+            "portfolio": "Portfolio",
+            "news": "News",
+            "contact_us": "Contact us"
+        },
         "home": {
-            "section1": {
-                "h1": "Work that we produce for our clients",
-                "p1": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium aliquid ut soluta blanditiis rem repellat voluptate, consectetur amet repudiandae incidunt iste temporibus neque consequuntur facere quibusdam assumenda modi optio sint?" 
-            },
-            "section2": {
-                "h1": "Currently trending games",
-                "followers": ["subscriber", "subscribers", "subscribers"]
-            },
-            "section3": {
-                "h1": "Lorem ipsum is a simple dummy text of the printing and typesetting industry",
-                "h2": "Lorem ipsum",
-                "p1": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe consequatur et sapiente vitae nulla quibusdam suscipit, repellendus totam non officiis libero fuga! Blanditiis commodi voluptates in voluptate numquam tempore iste?"
-            },
-            "section4": {
-                "h1": "Lorem ipsum is a simple dummy text of the printing and typesetting industry",
-                "p1": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, magni fuga. Dolores at consequatur voluptatum voluptatem suscipit quidem tempora, ducimus adipisci ipsum aliquid. Quis qui hic sapiente magni quod voluptas."
-            },
-            "section5": {
-                "h1": "Our Recent Projects",
-                "p1": "Lorem ipsum is simple dummy text of the printing and typesetting industry."
-            }
+                "section1": {
+                    "h1": "Work that we produce for our clients",
+                    "p1": "We specialize in creating high-quality software solutions, including game development for various platforms using Unity, Unreal Engine 4, and CryEngine. Our expertise spans from designing immersive virtual environments to crafting cutting-edge user experiences. Additionally, we deliver custom applications tailored to meet specific business needs, ensuring top-notch performance and scalability. Whether it's a mobile game, VR simulation, or enterprise-level application, we prioritize innovation, reliability, and client satisfaction in every project we undertake." 
+                },
+                "section2": {
+                    "h1": "Currently trending games",
+                    "followers": ["subscriber", "subscribers", "subscribers"]
+                },
+                "section3": {
+                    "h1": "Game development is our passion.",
+                    "h2": "Our Mission",
+                    "p1": "Every member of our team is an enthusiast who truly loves their work. Our designers and game developers won’t release a product they wouldn’t personally recommend. Thanks to this, the quality of our products is top-notch, and 99% of our clients and users are satisfied with it!"
+                },
+                "section4": {
+                    "h1": "Areas we specialize in",
+                    "p1": "Our company covers all modern directions in game and simulator development, including development for any platform! Here are the main areas where we already have experience:"
+                },
+                "section5": {
+                    "h1": "Our Recent Projects",
+                    "p1": "A few of our projects that we are incredibly proud of :)"
+                }
         },
         "footer": {
             "section1": {
-                "h1": "Lorem ipsum",
-                "p1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat rerum dolor, officiis voluptatem error, deserunt, eaque maxime sapiente odio corrupti vero natus cumque tempora distinctio debitis ab ipsa ut cum?" 
+                "h1": "We are progressing",
+                "p1": "Our company constantly works on new projects and improves existing ones. We also frequently host fan meetups. Don’t waste time — subscribe to our social media pages or updates to always stay informed about all events!"
             },
             "section2": {
-                "h1": "Stay in the loop",
-                "p1": "Subscribe to receive the latest news and updates about TDA. We promise not to spam you!",
-                "input-placeholder": "Enter email address"
+                "h1": "Stay updated",
+                "p1": "Subscribe to receive all the news and event notifications directly to your email. We promise not to spam!",
+                "input-placeholder": "Enter your email address"
             },
             "section3": {
-                "p1": "Lorem ipsum is a simple dumy text",
+                "p1": "TallDinoGames is a company that creates games from the heart.",
                 "about": {
                     "h1": "About us",
                     "p1": "Zeux",
@@ -44,14 +51,99 @@
                 },
                 "contact": {
                     "h1": "Contact us",
-                    "p1": "Lorem ipsum is a simple dumy text"
+                    "p1": "Get in touch with our friendly managers, who will forward your request to the technical department if necessary."
                 }
+            }
+        },
+        "about": {
+        "section1": {
+        "h1": "TallDinoGames specializes in the full cycle of game development, from design to platform launch.",
+        "p1": "Order a game from us and gain additional popularity thanks to the fans of other games from our company."
+        },
+        "section2": {
+        "h1": "Why you should work with us",
+        "card1": {
+            "h1": "Speed",
+            "h2": "Speed of project development",
+            "p1": "Our team of experienced professionals will immediately start working on your project, delivering the first results within a month and a fully functional prototype within a year."
+        },
+        "card2": {
+            "h1": "Quality",
+            "h2": "Quality of project development",
+            "p1": "Our developers and designers will pour their hearts into your game, working out every little detail. Players will definitely appreciate this!"
+        },
+        "card3": {
+            "h1": "Price",
+            "h2": "Cost of project development",
+            "p1": "Our prices are lower compared to other companies. Why? We are a small indie company, so we have fewer expenses, unlike larger companies that spend on spacious offices and marketing. However, thanks to our small size, there’s a special vibe in our team that you can also feel in our games. :)"
+        }
+        },
+        "section3": {
+        "h1": "Dota 2",
+        "h2": "Our best game",
+        "p1": "Dota 2 is our most successful game, played daily by millions of people worldwide. We achieved this success thanks to our artist, who created unique characters for the game that Dota 2 fans love so much."
+        },
+        "section4": {
+        "h1": "Our team"
+        }
+        },
+        "portfolio": {
+            "section1": {
+            "h1": "Our Portfolio",
+            "p1": "Games developed by us are known among players worldwide",
+            "clients": ["client", "clients", "clients"],
+            "countries": ["country", "countries", "countries"],
+            "projects": ["project", "projects", "projects"]
+            },
+            "section2": {
+            "h1": "Spiderman: Game",
+            "p1": "Our first game that became a hit. Become a superhero and catch bandits across the city.",
+            "ul": {
+                "li1": "An open world you can interact with",
+                "li2": "Modern graphics and animations",
+                "li3": "An advanced dialogue system where your choices affect everything",
+                "li4": "Received high praise from critics for its story development"
+            }
+            },
+            "section3": {
+            "h1": "Stray",
+            "p1": "Our favorite game about a stray cat exploring a 'city of the future' in cyberpunk style. Our artist worked hard on the visuals, delivering truly stunning graphics.",
+            "p2": "This game won the award for 'Best Game of 2021.'"
+            },
+            "section4": {
+            "h1": "Dota 2",
+            "p1": "Dota 2 is our most popular game. Known worldwide, Defense of The Ancients 2 immerses players into the battle of the Ancients, where they choose one of hundreds of heroes to defend their Ancient on the battlefield."
+            },
+            "section5": {
+            "h1": "Serious Shooter 2",
+            "p1": "The second installment of the Serious Shooter series was a project transferred to us by another company for engine upgrades and the addition of a new campaign. While not as ambitious as our previous games, it is still worth your attention."
+            },
+            "section6": {
+            "h1": "Trusted by thousands of satisfied clients",
+            "p1": "These are not just words; they are supported by hundreds of client reviews."
+            }
+        },
+        "contact_us": {
+            "section1": {
+                "h1": "We Are All Over the World",
+                "p1": "Our offices are located in several countries, our clients come from all continents, and our products are used worldwide. Moving forward, we aim to open more offices and gain clients from even more countries.",
+                "follow": "Follow us",
+                "hq": "HQ in Ivano-Frankivsk, Ukraine"
+            },
+            "section2": {
+                "h1": "Contact Us",
+                "p1": "Write us a message, and we will make sure to read it and provide feedback.",
+                "first_name": "First Name",
+                "last_name": "Last Name",
+                "email": "E-mail Address",
+                "message": "Message"
             }
         }
     },
     "buttons":{
         "details": "Get more details",
         "all": "See all",
-        "continue": "Continue"
+        "continue": "Continue",
+        "get_in_touch": "Get in touch"
     }
 }

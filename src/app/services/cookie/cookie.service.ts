@@ -1,11 +1,24 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CookieService {
+  private accepted: boolean = false
+  
+  public get cookiesPolicy(){
+    return this.accepted
+  }
 
-  constructor() { }
+  public set setCookies(value : boolean){
+    localStorage.setItem('cookies-allowed', value == true ? 'true':'false')
+    this.accepted = true
+  }
+
+  constructor() { 
+    this.accepted = localStorage.getItem('cookies-allowed') == 'true'
+  }
 
   public get lang(){
     const cookies = document.cookie.split('; ');

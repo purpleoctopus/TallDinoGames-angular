@@ -1,0 +1,76 @@
+{
+    "en":[
+        {
+            "name": "Viezh Robert",
+            "location": "Warsaw, Poland",
+            "image": "./assets/images/people/viezh_robert.png",
+            "rating": 5,
+            "text": "Excellent work!"
+        },
+        {
+            "name": "Yessica Christy",
+            "location": "Shanxi, China",
+            "image": "./assets/images/people/yessica_christy.png",
+            "rating": 4.5,
+            "text": "Good job! TallDinoGames made a very pretty game for my company!"
+        },
+        {
+            "name": "Kim Young Jou",
+            "location": "Seoul, South Korea",
+            "image": "./assets/images/people/kim_young_jou.png",
+            "rating": 4.5,
+            "text": "Asked for a game about sushi, got exactly what I expected. Thank you!"
+        },
+        {
+            "name": "Max",
+            "location": "Ohio, USA",
+            "image": "./assets/images/people/max.png",
+            "rating": 4,
+            "text": "Cool"
+        },
+        {
+            "name": "archuserbtw2007",
+            "location": "Ivano-Frankivsk, Ukraine",
+            "image": "./assets/images/people/somebody.png",
+            "rating": 5,
+            "text": "Nice work, TallDinoGames! \"Mork, the Ogre\" was a really good game!"
+        }
+    ],
+    "uk":[
+        {
+            "name": "Вієт Роберт",
+            "location": "Варшава, Польща",
+            "image": "./assets/images/people/viezh_robert.png",
+            "rating": 5,
+            "text": "Прекрасна робота!"
+        },
+        {
+            "name": "Єссіка Хрісті",
+            "location": "Шанхай, Китай",
+            "image": "./assets/images/people/yessica_christy.png",
+            "rating": 4.5,
+            "text": "Хороша робота! TallDinoGames зробили прекрасну гру для моєї компанії."
+        },
+        {
+            "name": "Кім Янг Чжоу",
+            "location": "Сеул, Південна Корея",
+            "image": "./assets/images/people/kim_young_jou.png",
+            "rating": 4.5,
+            "text": "Замовив гру про суші, вийшло якраз так, як я хотів. Дякую, TallDinoGames!"
+        },
+        {
+            "name": "Макс",
+            "location": "Огайо, США",
+            "image": "./assets/images/people/max.png",
+            "rating": 4,
+            "text": "Крутяк"
+        },
+        {
+            "name": "archuserbtw2007",
+            "location": "Івано-Франківськ, Україна",
+            "image": "./assets/images/people/somebody.png",
+            "rating": 5,
+            "text": "Гарна робота, TallDinoGames! \"Mork, the Ogre\" - це реальна класна гра!"
+        }
+    ]
+}

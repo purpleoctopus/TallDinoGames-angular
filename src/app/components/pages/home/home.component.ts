@@ -22,7 +22,9 @@ import { PluralPipe } from '../../../pipes/plural.pipe';
   encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent{
-  public isMobile: boolean = false;
+  public get isMobile(): boolean{
+    return window.innerWidth <= 720 
+  }
 
   constructor() {
   }

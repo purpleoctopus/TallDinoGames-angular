@@ -1,0 +1,16 @@
+.mobile-hide{
+    display: block;
+}
+
+input, textarea{
+    @apply border-2 border-gray-400 rounded-lg bg-gray-500 h-10;
+}
+
+@media (max-width: 780px) {
+    .mobile-adaptive{
+        @apply w-full justify-center mb-3;
+    }
+    .mobile-hide{
+        display: none;
+    }
+}

@@ -20,7 +20,7 @@
 <section class="px-16-adaptive">
     <div class="flex justify-between mb-3">
         <h2>{{"content.home.section2.h1" | translate}}</h2>
-        <button class="gray-button">{{"buttons.all" | translate}}</button>
+        <button class="gray-button transperent-gray">{{"buttons.all" | translate}}</button>
     </div>
     <div>
         <app-swiper [config]="{slidesPerView:1, breakpoints: {
@@ -36,8 +36,8 @@
           }}">
             <div class="swiper-slide">
                 <img [responsiveImage]="{
-                    '480': './assets/images/pictures-med/games/stray.webp',
-                    '1200': './assets/images/pictures-large/games/stray.webp'
+                    '480': './assets/images/pictures-med/games/game1.webp',
+                    '1200': './assets/images/pictures-large/games/game1.webp'
                 }" class="h-auto mx-auto w-[200px] mb-2"  alt="popular project 1">
                 <div class="flex justify-center">
                     <img src="./assets/images/fire.png" class="inline h-[1.25rem] w-auto pr-2" alt="hot">
@@ -48,8 +48,8 @@
             </div>
             <div class="swiper-slide">
                 <img [responsiveImage]="{
-                    '480': './assets/images/pictures-med/games/stray.webp',
-                    '1200': './assets/images/pictures-large/games/stray.webp'
+                    '480': './assets/images/pictures-med/games/game2.webp',
+                    '1200': './assets/images/pictures-large/games/game2.webp'
                 }" class="h-auto mx-auto w-[200px] mb-2"  alt="popular project 2">
                 <div class="flex justify-center">
                     <img src="./assets/images/fire.png" class="inline h-[1.25rem] w-auto pr-2" alt="hot">
@@ -60,8 +60,8 @@
             </div>
             <div class="swiper-slide">
                 <img [responsiveImage]="{
-                    '480': './assets/images/pictures-med/games/stray.webp',
-                    '1200': './assets/images/pictures-large/games/stray.webp'
+                    '480': './assets/images/pictures-med/games/game3.webp',
+                    '1200': './assets/images/pictures-large/games/game3.webp'
                 }" class="h-auto mx-auto w-[200px] mb-2"  alt="popular project 3">
                 <div class="flex justify-center">
                     <img src="./assets/images/fire.png" class="inline h-[1.25rem] w-auto pr-2" alt="hot">
@@ -87,17 +87,17 @@
 </section>
 
 <section>
-    <h2 class="p-5 px-16-adaptive text-xl mx-auto text-center poppins mb-4">
+    <h2 class="p-5 px-16-adaptive text-xl mx-auto text-center mb-4">
         {{'content.home.section3.h1' | translate}}
     </h2>
     <div class="p-5 px-16-adaptive">
-        <h2 class="poppins mb-4">{{'content.home.section3.h2' | translate}}</h2>
+        <h2 class="mb-4">{{'content.home.section3.h2' | translate}}</h2>
         <p class="mb-4">{{'content.home.section3.p1' | translate}}</p>
         <img class="my-5" src="./assets/images/pictures-large/spiderman.webp" alt="spiderman-project">
     </div>
 </section>
 
-<section class="flex flex-col relative p-5 z-10 min-h-[600px] h-auto bg-dune" [responsiveBackground]="{
+<section class="flex flex-col relative p-5 z-10 h-auto bg-dune" [responsiveBackground]="{
     '480': './assets/images/pictures-sm/dune.webp',
     '768': './assets/images/pictures-med/dune.webp',
     '1200': './assets/images/pictures-large/dune.webp'
@@ -143,30 +143,30 @@
 </section>
 
 <section>
-    <h2 class="text-center poppins text-xl mb-4">{{'content.home.section5.h1' | translate}}</h2>
+    <h2 class="text-center text-xl mb-4">{{'content.home.section5.h1' | translate}}</h2>
     <p class="text-sm text-center mb-4">
         {{'content.home.section5.p1' | translate}}
     </p>
-    <div class="desktop-view mb-4">
+    <div class="desktop-view mb-4" *ngIf="!isMobile">
         <div class="flex justify-around mb-3 h-[18vw]">
             <img [responsiveImage]="{
                 '720': './assets/images/pictures-med/our-recent-projects/project1.webp',
                 '1200': './assets/images/pictures-large/our-recent-projects/project1.webp'
-            }">
-            <img src="./assets/images/pictures-med/our-recent-projects/project2.png">
-            <img src="./assets/images/pictures-med/our-recent-projects/project3.png">
+            }" alt="project 1">
+            <img src="./assets/images/pictures-med/our-recent-projects/project2.png" alt="project 2">
+            <img src="./assets/images/pictures-med/our-recent-projects/project3.png" alt="project 3">
         </div>
         <div class="flex justify-around h-[18vw]">
-            <img class="w-auto" src="./assets/images/pictures-large/our-recent-projects/project4.png">
-            <img src="./assets/images/pictures-med/our-recent-projects/project5.png">
-            <img src="./assets/images/pictures-med/our-recent-projects/project6.png">
+            <img class="w-auto" src="./assets/images/pictures-large/our-recent-projects/project4.png"  alt="project 4">
+            <img src="./assets/images/pictures-med/our-recent-projects/project5.png" alt="project 5">
+            <img src="./assets/images/pictures-med/our-recent-projects/project6.png" alt="project 6">
         </div>
     </div>
-    <div class="mobile-view">
+    <div class="mobile-view" *ngIf="isMobile">
         <app-swiper [config]="{autoplay: {delay:5000}, loop: true}">
             @for (image of [
             './assets/images/pictures-large/our-recent-projects/project1.webp',
-            './assets/images/pictures-med/our-recent-projects/project2.png',
+            './assets/images/pictures-large/our-recent-projects/project2.webp',
             './assets/images/pictures-med/our-recent-projects/project3.png',
             './assets/images/pictures-med/our-recent-projects/project4.png',
             './assets/images/pictures-med/our-recent-projects/project5.png',
@@ -178,5 +178,5 @@
             }
         </app-swiper>
     </div>
-    <button class="mx-auto gray-button block">{{'buttons.all' | translate}}</button>
+    <button class="mx-auto gray-button block transperent-gray">{{'buttons.all' | translate}}</button>
 </section>

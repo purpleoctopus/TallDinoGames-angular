@@ -8,10 +8,32 @@ body{
     color: white;
     font-family: 'Helvetica';
     font-weight: bold;
-    background: linear-gradient(180.96deg, #000000 0.82%, #3d2204 129.1%);
+    background: linear-gradient(180.96deg, #000000 0.82%, #3d2204 50%,#000000 100%);
+}
+.transperent-gray{
+    background: #352b24;
+}
+.poppins{
+    font-family: 'Poppins';
+}
+section{
+    @apply mb-10;
+}
+
+.px-16-adaptive{
+    @apply px-[clamp(1rem,5%,4rem)];
+}
+h1{
+    font-size: 2rem;
 }
 h2{
-    font-size: 18px;
+    @apply text-xl;
+}
+h3{
+    @apply text-lg;
+}
+h4{
+    @apply text-sm;
 }
 html{
     font-size: 16px;

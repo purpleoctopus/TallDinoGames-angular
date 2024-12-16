@@ -1,0 +1,17 @@
+
+.card{
+    @apply rounded-lg p-[clamp(1rem,5%,3rem)] mx-auto;
+}
+
+h4.purple, h4.brown, h4.green {
+    @apply w-fit px-2 py-1 rounded-md;
+}
+h4.purple {
+    background: rgba(176, 0, 220, 0.11);
+}
+h4.brown {
+    background: rgba(220, 66, 0, 0.11);
+}
+h4.green { 
+    background: rgba(0, 220, 141, 0.11);
+}

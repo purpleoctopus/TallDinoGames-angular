@@ -1,0 +1,53 @@
+<section class="px-16-adaptive text-center">
+    <h4 class="mb-2">Home > <span class="text-orange-500">Contact us</span></h4>
+    <h2 class="mb-2">{{'content.contact_us.section1.h1' | translate}}</h2>
+    <h4>{{'content.contact_us.section1.p1' | translate}}</h4>
+    <img alt="world map" src="./assets/images/world_map.png" class="my-3">
+    <div class="flex flex-wrap p-3 justify-between">
+        <div class="mobile-adaptive">
+            <h4 class="text-center">{{'content.contact_us.section1.follow' | translate}}</h4>
+            <div class="flex justify-center max-w-[25rem] mx-auto">
+                <img class="w-[25%] h-auto invert" src="./assets/images/icons/facebook.svg" alt="facebook logo">
+                <img class="w-[25%] h-auto invert" src="./assets/images/icons/instagram.svg" alt="instagram logo">
+                <img class="w-[25%] h-auto invert" src="./assets/images/icons/twitter.svg" alt="twitter logo">
+                <img class="w-[25%] h-auto invert" src="./assets/images/icons/linkedin.svg" alt="linkedin logo">
+            </div>
+        </div>
+        <div class="w-[2px] bg-white mobile-hide"></div>
+        <div class="flex mx-auto mobile-adaptive">
+            <img alt="call icon" src="./assets/images/icons/phone.svg" class="my-auto mr-2">
+            <p class="my-auto">+380503586705</p>
+        </div>
+        <div class="w-[2px] bg-white mobile-hide"></div>
+        <div class="flex mx-auto mobile-adaptive">
+            <img alt="location icon" src="./assets/images/icons/point.svg" class="my-auto invert brightness-0 mr-2">
+            <p class="my-auto">{{'content.contact_us.section1.hq' | translate}}</p>
+        </div>
+    </div>
+</section>
+
+<section class="px-16-adaptive py-6 transperent-gray">
+    <h2 class="text-center">{{'content.contact_us.section2.h1' | translate}}</h2>
+    <p class="text-sm text-center mb-8">{{'content.contact_us.section2.p1' | translate}}</p>
+    <form name="send_letter" class="flex flex-col justify-center">
+        <div class="flex gap-3 w-full mb-2">
+            <div class="w-1/2">
+                <label for="first name">{{'content.contact_us.section2.first_name' | translate}}</label>
+                <input type="text" name="first_name" class="block w-full">
+            </div>
+            <div class="w-1/2">
+                <label for="last name">{{'content.contact_us.section2.last_name' | translate}}</label>
+                <input type="text" name="last_name" class="block w-full">
+            </div>
+        </div>
+        <div class="mb-2">
+            <label for="email">{{'content.contact_us.section2.email' | translate}}</label>
+            <input type="text" name="email" class="w-full">
+        </div>
+        <div>
+            <label for="message">{{'content.contact_us.section2.message' | translate}}</label>
+            <textarea name="message" class="block w-full min-h-[240px]"></textarea>
+        </div>
+        <button type="submit" class="block bg-orange-500 rounded-lg py-2 px-3 mt-6 ml-auto">{{'buttons.get_in_touch' | translate}}</button>
+    </form>
+</section>

@@ -1,0 +1,23 @@
+.order-adaptive{
+    order: 1;
+}
+
+.card{
+    @apply w-[280px] h-[200px] rounded-md border-white border-2 m-auto p-4;
+}
+
+@media (min-width: 560px){
+    .advantages{
+        @apply mx-4;
+    }
+}
+@media (max-width: 480px){
+    .responsive-text{
+        @apply text-sm;
+    }
+}
+@media (max-width: 727px) {
+    .order-adaptive{
+        order: 0;
+    }
+}

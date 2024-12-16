@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, Input, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
 import Swiper from 'swiper';
-import { Autoplay } from 'swiper/modules'
+import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 import { SwiperOptions } from 'swiper/types';
 
 @Component({
@@ -18,10 +18,11 @@ export class SwiperComponent implements OnDestroy, OnInit, AfterViewInit {
   public counter: number = 0
 
   @Input() config?: SwiperOptions | null
+  @Input() extended: boolean = false
   private swiperConfig: SwiperOptions = {
     slidesPerView: 1,
     spaceBetween: 10,
-    modules: [Autoplay]
+    modules: [Autoplay, Pagination, Navigation],
   };
 
   constructor() {
