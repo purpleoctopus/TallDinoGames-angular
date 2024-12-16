@@ -144,6 +144,7 @@
         "details": "Get more details",
         "all": "See all",
         "continue": "Continue",
-        "get_in_touch": "Get in touch"
+        "get_in_touch": "Get in touch",
+        "accept_all": "Accept all"
     }
 }
